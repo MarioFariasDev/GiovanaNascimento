@@ -223,6 +223,16 @@ treinos.forEach((treino, i) => {
       <thead>
         <tr>`;
 
+  if (treino.treino2) {
+  html += `
+    <div class="treino2">
+      <h3>Treino 2 – ${treino.treino2.tipo}</h3>
+      <p><strong>Objetivo:</strong> ${treino.treino2.objetivo}</p>
+      <p><strong>Detalhes:</strong> ${treino.treino2.detalhes}</p>
+    </div>
+  `;
+}
+
   if (treino.tipo === "dieta") {
     html += `
           <th>✔</th>
