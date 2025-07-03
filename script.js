@@ -206,49 +206,6 @@ const treinos = [
     }
   }
 ];
-  // Corrida
-  {
-    dia: "Treinos de Corrida – Híbrido",
-    tecnica: "Variedade de estímulos",
-    objetivo: "Resistência e VO2máx",
-    tipo: "normal",
-    exercicios: [
-      ["Corrida leve", "1", "30min", "Pace 5:30", "Base aeróbica"],
-      ["Intervalado", "5x800m", "Rec 2min", "Pace 4:10", "VO2máx"],
-      ["Corrida moderada", "1", "40min", "Pace 4:40", "Ritmo sustentado"],
-      ["HIIT", "10x200m", "-", "Pace 4:00", "Neuromuscular"],
-      ["Longão", "1", "10km", "Pace 5:00", "Resistência mental"]
-    ]
-  },
-  // Dieta
-  {
-    dia: "Dieta Econômica e Inteligente",
-    tecnica: "Baixo custo",
-    objetivo: "Manutenção de massa e energia",
-    tipo: "dieta",
-    exercicios: [
-      ["Café da manhã", "2 ovos + pão integral + banana + café"],
-      ["Almoço", "Arroz + feijão + frango (ou ovo) + legumes"],
-      ["Lanche", "Pasta de amendoim + banana + limão"],
-      ["Jantar", "Ovos mexidos + salada + arroz integral"],
-      ["Ceia (opcional)", "Mingau de aveia"]
-    ]
-  },
-  // Suplementação
-  {
-    dia: "Suplementação Inteligente",
-    tecnica: "Acessível",
-    objetivo: "Recuperação e performance",
-    tipo: "normal",
-    exercicios: [
-      ["Whey Protein", "1 dose", "Pós-treino", "-", "Se possível"],
-      ["Alternativa", "-", "-", "-", "3 ovos ou leite com banana"],
-      ["Creatina", "3-5g/dia", "-", "-", "Altamente eficaz"],
-      ["Multivitamínico", "1 comp/dia", "-", "-", "Farmácia popular"]
-    ]
-  }
-];
-
 // --- RENDERIZAÇÃO DOS TREINOS ---
 
 const treinoContainer = document.getElementById("treinoContainer");
