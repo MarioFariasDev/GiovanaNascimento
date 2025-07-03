@@ -1,160 +1,211 @@
 const treinos = [
-  // Treino A – Peito + Tríceps
+  // DIA 1 – Inferiores + Core
   {
-    dia: "Treino A – Peito + Tríceps",
-    tecnica: "Bi-Set e Drop-set",
-    objetivo: "Hipertrofia e intensidade",
+    dia: "DIA 1 – Inferiores + Core",
+    tecnica: "Bi-set com cadência controlada",
+    objetivo: "Foco em membros inferiores e core com intensidade",
     tipo: "normal",
     exercicios: [
       {
-        nome: "Supino reto + Crucifixo reto",
-        series: "4",
-        reps: "12-10-8-6",
-        tecnica: "Drop-set",
-        obs: "Drop na última série",
+        nome: "Agachamento guiado + Afundo no smith",
+        series: "3",
+        reps: "12 + 10 cada perna",
+        tecnica: "Bi-set",
+        obs: "Executar com controle de cadência (2:1)",
       },
       {
-        nome: "Supino inclinado + Cross-over",
+        nome: "Cadeira extensora + Flexora deitada",
         series: "3",
-        reps: "12",
+        reps: "15 cada",
+        tecnica: "Bi-set",
+        obs: "2s de contração na extensora",
+      },
+      {
+        nome: "Stiff com halteres + Glúteo no cabo",
+        series: "3",
+        reps: "12 + 15",
         tecnica: "Bi-set",
         obs: "-",
       },
       {
-        nome: "Mergulho entre bancos",
-        series: "3",
-        reps: "Falha",
-        tecnica: "-",
-        obs: "-",
-      },
-      {
-        nome: "Tríceps corda",
+        nome: "Abdômen infra na barra",
         series: "3",
         reps: "15",
         tecnica: "-",
         obs: "-",
+      },
+      {
+        nome: "Prancha lateral com elevação de perna",
+        series: "3",
+        reps: "20s cada lado",
+        tecnica: "Isometria + movimento",
+        obs: "-",
       }
-    ]
+    ],
+    treino2: {
+      tipo: "Natação leve",
+      objetivo: "Atividade complementar aeróbica",
+      detalhes: "Sessão de 45-60min, ritmo leve a moderado. Pode ser crawl, costas ou estilo livre. Foco em recuperação ativa."
+    }
   },
-  // Treino B – Costas + Bíceps
+
+  // DIA 2 – Costas + Ombros + Tríceps
   {
-    dia: "Treino B – Costas + Bíceps",
-    tecnica: "Rest-pause e Técnica Lenta",
-    objetivo: "Força e controle neuromuscular",
+    dia: "DIA 2 – Costas + Ombros + Tríceps",
+    tecnica: "Drop-set leve e bi-set",
+    objetivo: "Ativação completa do tronco com intensidade controlada",
     tipo: "normal",
     exercicios: [
       {
-        nome: "Barra fixa",
-        series: "4",
-        reps: "Falha",
-        tecnica: "-",
-        obs: "-",
-        video: "barra-fixa.mp4"
-      },
-      {
-        nome: "Remada curvada",
-        series: "3",
-        reps: "10",
-        tecnica: "Cadência 3:1",
-        obs: "-",
-        video: "remada-curvada.mp4"
-      },
-      {
-        nome: "Pulley frente + Rosca direta",
+        nome: "Remada baixa",
         series: "3",
         reps: "12",
-        tecnica: "Bi-set",
+        tecnica: "Drop-set na última série",
         obs: "-",
-        video: "pulley-rosca.mp4"
       },
       {
-        nome: "Rosca alternada unilateral",
+        nome: "Puxada frente pegada aberta",
         series: "3",
         reps: "10",
-        tecnica: "Isometria",
-        obs: "-",
-        video: "rosca-unilateral.mp4"
-      }
-    ]
-  },
-  // Treino C – Pernas
-  {
-    dia: "Treino C – Pernas completas",
-    tecnica: "Pirâmide + Falha",
-    objetivo: "Desenvolvimento de força e volume",
-    tipo: "normal",
-    exercicios: [
-      {
-        nome: "Agachamento livre",
-        series: "5",
-        reps: "15-12-10-8-6",
-        tecnica: "Pirâmide",
-        obs: "-",
-        video: "agachamento-livre.mp4"
-      },
-      {
-        nome: "Leg press",
-        series: "4",
-        reps: "12",
         tecnica: "-",
-        obs: "-",
-        video: "leg-press.mp4"
-      },
-      {
-        nome: "Afundo com halteres",
-        series: "3",
-        reps: "8 cada perna",
-        tecnica: "-",
-        obs: "-",
-        video: "afundo-halteres.mp4"
-      },
-      {
-        nome: "Cadeira extensora",
-        series: "3",
-        reps: "Falha",
-        tecnica: "Drop-set triplo",
-        obs: "-",
-        video: "cadeira-extensora.mp4"
-      }
-    ]
-  },
-  // Treino D – Ombros + Trapézio
-  {
-    dia: "Treino D – Ombros + Trapézio",
-    tecnica: "Técnica 21 + Drop-set",
-    objetivo: "Definição e hipertrofia",
-    tipo: "normal",
-    exercicios: [
-      {
-        nome: "Elevação lateral",
-        series: "3",
-        reps: "21 reps (7+7+7)",
-        tecnica: "Técnica 21",
         obs: "-",
       },
       {
         nome: "Desenvolvimento com halteres",
         series: "3",
-        reps: "10",
-        tecnica: "Drop-set na última",
-        obs: "-",
-      },
-      {
-        nome: "Encolhimento com barra",
-        series: "4",
         reps: "12",
         tecnica: "-",
         obs: "-",
       },
       {
-        nome: "Face pull",
+        nome: "Elevação lateral unilateral",
         series: "3",
         reps: "15",
         tecnica: "-",
         obs: "-",
+      },
+      {
+        nome: "Tríceps corda + Coice com halteres",
+        series: "3",
+        reps: "12 + 12",
+        tecnica: "Bi-set",
+        obs: "-",
+      },
+      {
+        nome: "Prancha com avanço",
+        series: "3",
+        reps: "30s",
+        tecnica: "Isometria dinâmica",
+        obs: "-",
       }
-    ]
+    ],
+    treino2: {
+      tipo: "Corrida Intervalada",
+      objetivo: "Trabalhar ritmo e resistência",
+      detalhes: "5 min trote leve + 4x400m em ritmo moderado com 2 min de trote leve entre + 5 min de trote leve + alongamento"
+    }
   },
+
+  // DIA 3 – Full Body em Circuito
+  {
+    dia: "DIA 3 – Full Body em Circuito",
+    tecnica: "Circuito de resistência",
+    objetivo: "Gasto calórico e ativação total",
+    tipo: "circuito",
+    exercicios: [
+      {
+        nome: "Agachamento com halteres",
+        series: "3",
+        reps: "15",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Flexão de braço no solo",
+        series: "3",
+        reps: "12",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Remada curvada com halteres",
+        series: "3",
+        reps: "15",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Desenvolvimento com halteres",
+        series: "3",
+        reps: "15",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Stiff com halteres",
+        series: "3",
+        reps: "15",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Elevação lateral + frontal",
+        series: "3",
+        reps: "12 + 12",
+        tecnica: "Bi-set",
+        obs: "-",
+      },
+      {
+        nome: "Prancha isométrica",
+        series: "3",
+        reps: "40s",
+        tecnica: "Isometria",
+        obs: "-",
+      }
+    ],
+    treino2: {
+      tipo: "Natação opcional",
+      objetivo: "Recuperação ativa",
+      detalhes: "Sessão leve, 30-45min. Preferência para técnica suave, sem estímulo de alta intensidade."
+    }
+  },
+
+  // DIA 4 – Corrida Simulada
+  {
+    dia: "DIA 4 – Corrida 3km (Simulado)",
+    tecnica: "Corrida contínua de avaliação",
+    objetivo: "Medir condição aeróbica atual",
+    tipo: "cardio",
+    exercicios: [
+      {
+        nome: "Caminhada + Trote leve (aquecimento)",
+        series: "-",
+        reps: "5min + 5min",
+        tecnica: "-",
+        obs: "-",
+      },
+      {
+        nome: "Corrida contínua 3km",
+        series: "-",
+        reps: "Tempo livre",
+        tecnica: "-",
+        obs: "Manter ritmo leve a moderado. Registrar tempo final",
+      },
+      {
+        nome: "Trote leve + Alongamento",
+        series: "-",
+        reps: "5min + 5min",
+        tecnica: "Recuperação",
+        obs: "-",
+      }
+    ],
+    treino2: {
+      tipo: "Descanso ativo (opcional)",
+      objetivo: "Caminhada leve ou mobilidade",
+      detalhes: "Caso haja fadiga, apenas alongamento leve. Caso contrário, caminhada leve de 20-30min à noite."
+    }
+  }
+];
   // Corrida
   {
     dia: "Treinos de Corrida – Híbrido",
