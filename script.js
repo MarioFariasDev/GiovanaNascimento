@@ -41,15 +41,10 @@ const treinos = [
         tecnica: "Isometria + movimento",
         obs: "-",
       }
-    ],
-    treino2: {
-      tipo: "Natação leve",
-      objetivo: "Atividade complementar aeróbica",
-      detalhes: "Sessão de 45-60min, ritmo leve a moderado. Pode ser crawl, costas ou estilo livre. Foco em recuperação ativa."
-    }
+    ]
   },
 
-  // DIA 2 – Costas + Ombros + Tríceps
+  // DIA 2 – Costas + Ombros + Tríceps + Corrida
   {
     dia: "DIA 2 – Costas + Ombros + Tríceps",
     tecnica: "Drop-set leve e bi-set",
@@ -97,16 +92,18 @@ const treinos = [
         reps: "30s",
         tecnica: "Isometria dinâmica",
         obs: "-",
+      },
+      {
+        nome: "Corrida Intervalada (4x400m)",
+        series: "-",
+        reps: "-",
+        tecnica: "-",
+        obs: "5 min trote leve + 4x400m moderado com 2 min de recuperação + 5 min trote leve"
       }
-    ],
-    treino2: {
-      tipo: "Corrida Intervalada",
-      objetivo: "Trabalhar ritmo e resistência",
-      detalhes: "5 min trote leve + 4x400m em ritmo moderado com 2 min de trote leve entre + 5 min de trote leve + alongamento"
-    }
+    ]
   },
 
-  // DIA 3 – Full Body em Circuito
+  // DIA 3 – Full Body em Circuito + Natação
   {
     dia: "DIA 3 – Full Body em Circuito",
     tecnica: "Circuito de resistência",
@@ -161,16 +158,18 @@ const treinos = [
         reps: "40s",
         tecnica: "Isometria",
         obs: "-",
+      },
+      {
+        nome: "Natação",
+        series: "-",
+        reps: "-",
+        tecnica: "-",
+        obs: "-"
       }
-    ],
-    treino2: {
-      tipo: "Natação opcional",
-      objetivo: "Recuperação ativa",
-      detalhes: "Sessão leve, 30-45min. Preferência para técnica suave, sem estímulo de alta intensidade."
-    }
+    ]
   },
 
-  // DIA 4 – Corrida Simulada
+  // DIA 4 – Corrida Simulada + Atividade leve
   {
     dia: "DIA 4 – Corrida 3km (Simulado)",
     tecnica: "Corrida contínua de avaliação",
@@ -197,15 +196,18 @@ const treinos = [
         reps: "5min + 5min",
         tecnica: "Recuperação",
         obs: "-",
+      },
+      {
+        nome: "Caminhada leve ou alongamento (opcional)",
+        series: "-",
+        reps: "-",
+        tecnica: "-",
+        obs: "20-30 min de caminhada leve OU alongamento completo guiado."
       }
-    ],
-    treino2: {
-      tipo: "Descanso ativo (opcional)",
-      objetivo: "Caminhada leve ou mobilidade",
-      detalhes: "Caso haja fadiga, apenas alongamento leve. Caso contrário, caminhada leve de 20-30min à noite."
-    }
+    ]
   }
 ];
+
 // --- RENDERIZAÇÃO DOS TREINOS ---
 
 const treinoContainer = document.getElementById("treinoContainer");
@@ -222,16 +224,6 @@ treinos.forEach((treino, i) => {
     <table class="exercise-table">
       <thead>
         <tr>`;
-
-  if (treino.treino2) {
-  html += `
-    <div class="treino2">
-      <h3>Treino 2 – ${treino.treino2.tipo}</h3>
-      <p><strong>Objetivo:</strong> ${treino.treino2.objetivo}</p>
-      <p><strong>Detalhes:</strong> ${treino.treino2.detalhes}</p>
-    </div>
-  `;
-}
 
   if (treino.tipo === "dieta") {
     html += `
