@@ -57,6 +57,7 @@ const treinos = [
         reps: "12",
         tecnica: "Drop-set na última série",
         obs: "-",
+        video: "remada-baixa.mp4"
       },
       {
         nome: "Puxada frente pegada aberta",
@@ -64,6 +65,7 @@ const treinos = [
         reps: "10",
         tecnica: "-",
         obs: "-",
+        video: "puxada-maquina.mp4"
       },
       {
         nome: "Desenvolvimento com halteres",
@@ -71,6 +73,7 @@ const treinos = [
         reps: "12",
         tecnica: "-",
         obs: "-",
+        video: "desenvolvimento-halteres.mp4"
       },
       {
         nome: "Elevação lateral unilateral",
@@ -78,6 +81,7 @@ const treinos = [
         reps: "15",
         tecnica: "-",
         obs: "-",
+        video: "elevacao-lateral.mp4"
       },
       {
         nome: "Tríceps corda + Coice com halteres",
@@ -85,13 +89,15 @@ const treinos = [
         reps: "12 + 12",
         tecnica: "Bi-set",
         obs: "-",
+        video: "triceps-coice.mp4"
       },
       {
-        nome: "Prancha com avanço",
+        nome: "Prancha com montanha",
         series: "3",
         reps: "30s",
         tecnica: "Isometria dinâmica",
         obs: "-",
+        video: "prancha-montanha.mp4"
       },
       {
         nome: "Corrida Intervalada (4x400m)",
