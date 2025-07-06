@@ -182,38 +182,4 @@ button#salvarFeedback:hover,
         margin-top: 0.4rem;
     }
 }
-#videoModal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
 
-.video-content {
-    position: relative;
-    max-width: 90vw;
-    max-height: 90vh;
-    background: #000;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.video-content video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1001;
-}
