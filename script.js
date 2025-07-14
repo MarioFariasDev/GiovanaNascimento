@@ -1,64 +1,76 @@
 const treinos = [
-  // DIA 1 – Full Body Corpo Livre + Corrida Leve
+  // DIA 1 – Inferiores + Core + Corrida
   {
-    dia: "DIA 1 – Full Body + Corrida Leve",
-    tecnica: "Funcional com corrida contínua",
-    objetivo: "Ativação geral e estímulo aeróbico leve",
+    dia: "DIA 1 – Inferiores + Core + Corrida",
+    tecnica: "Bi-set com foco em glúteos e controle",
+    objetivo: "Definição e resistência + base aeróbica leve",
     tipo: "normal",
     exercicios: [
-      { nome: "Agachamento com peso corporal", series: "3", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Flexão com apoio de joelhos", series: "3", reps: "10", tecnica: "-", obs: "-" },
-      { nome: "Remada invertida na toalha (porta)", series: "3", reps: "12", tecnica: "-", obs: "Usar toalha firme em porta ou estrutura segura" },
-      { nome: "Elevação de quadril (glúteos)", series: "3", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Prancha isométrica", series: "3", reps: "30s", tecnica: "Isometria", obs: "-" },
-      { nome: "Corrida contínua leve", series: "-", reps: "20 minutos", tecnica: "-", obs: "Ritmo leve, pode ser substituída por escadas" }
+      { nome: "Agachamento Smith + Cadeira extensora", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Stiff com halteres + Flexora deitada", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Avanço no step com halteres", series: "3", reps: "10 cada perna", tecnica: "-", obs: "-" },
+      { nome: "Abdômen canivete no banco declinado", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Prancha com deslocamento lateral", series: "3", reps: "30s", tecnica: "Isometria dinâmica", obs: "-" },
+      { nome: "Corrida leve técnica", series: "-", reps: "20 min", tecnica: "-", obs: "4x 1min leve + 1min caminhada + trote final" }
     ]
   },
 
-  // DIA 2 – Glúteos e Abdômen (Hotel)
+  // DIA 2 – Peito + Tríceps + Natação
   {
-    dia: "DIA 2 – Glúteos + Abdômen",
-    tecnica: "Corpo livre com foco posterior",
-    objetivo: "Manutenção de massa + resistência muscular localizada",
+    dia: "DIA 2 – Peito + Tríceps + Natação",
+    tecnica: "Bi-set e drop-set leve",
+    objetivo: "Estímulo em empurrar + recuperação ativa",
     tipo: "normal",
     exercicios: [
-      { nome: "Agachamento sumô + isometria 5s", series: "3", reps: "12", tecnica: "Isometria final", obs: "-" },
-      { nome: "Ponte unilateral", series: "3", reps: "10 por perna", tecnica: "-", obs: "-" },
-      { nome: "Glúteo 4 apoios + chute", series: "3", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Abdominal infra alternado", series: "3", reps: "20", tecnica: "-", obs: "-" },
-      { nome: "Prancha com avanço", series: "3", reps: "30s", tecnica: "Dinâmica", obs: "-" },
-      { nome: "Subida em escada (ou step)", series: "3", reps: "20 passos", tecnica: "-", obs: "Usar escada do hotel ou apoio firme" }
+      { nome: "Supino reto + Crucifixo reto", series: "3", reps: "12", tecnica: "Bi-set", obs: "-" },
+      { nome: "Supino inclinado com halteres", series: "3", reps: "10", tecnica: "-", obs: "-" },
+      { nome: "Cross-over em pé", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Tríceps corda + Tríceps banco", series: "3", reps: "12", tecnica: "Bi-set", obs: "-" },
+      { nome: "Tríceps francês unilateral", series: "3", reps: "10", tecnica: "-", obs: "-" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 3 – Funcional Intenso + Escada/Corrida
+  // DIA 3 – Costas + Ombros + Corrida Intervalada
   {
-    dia: "DIA 3 – Funcional Metabólico + Cardio",
-    tecnica: "Circuito funcional com pausa curta",
-    objetivo: "Alta queima calórica e estímulo cardiovascular",
+    dia: "DIA 3 – Costas + Ombros + Corrida",
+    tecnica: "Bi-set e estímulo postural",
+    objetivo: "Força em puxar + sistema cardiovascular",
+    tipo: "normal",
+    exercicios: [
+      { nome: "Puxada frente + Remada baixa", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Remada curvada barra ou halteres", series: "3", reps: "10", tecnica: "-", obs: "-" },
+      { nome: "Elevação lateral + Desenvolvimento", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Face pull", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Prancha lateral com elevação", series: "3", reps: "30s", tecnica: "Isometria", obs: "-" },
+      { nome: "Corrida intervalada", series: "-", reps: "5x 400m", tecnica: "Intervalado", obs: "1min trote entre" }
+    ]
+  },
+
+  // DIA 4 – Full Body Circuito + Abdômen
+  {
+    dia: "DIA 4 – Full Body + Abdômen",
+    tecnica: "Circuito funcional com resistência",
+    objetivo: "Ativação total + gasto calórico",
     tipo: "circuito",
     exercicios: [
-      { nome: "Polichinelo", series: "4", reps: "30s", tecnica: "Aquecimento", obs: "-" },
-      { nome: "Agachamento com salto", series: "4", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Flexão padrão ou joelhos", series: "4", reps: "10", tecnica: "-", obs: "-" },
-      { nome: "Burpee adaptado", series: "4", reps: "8", tecnica: "-", obs: "-" },
-      { nome: "Prancha com toque no ombro", series: "4", reps: "30s", tecnica: "-", obs: "-" },
-      { nome: "Corrida ou escadas", series: "-", reps: "5 min", tecnica: "-", obs: "Substituir corrida por escadas, se necessário" }
+      { nome: "Leg press", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Remada baixa", series: "3", reps: "12", tecnica: "-", obs: "-" },
+      { nome: "Desenvolvimento com halteres", series: "3", reps: "12", tecnica: "-", obs: "-" },
+      { nome: "Mesa flexora", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Elevação lateral", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Abdominal oblíquo no banco", series: "3", reps: "20", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 4 – Corrida Progressiva + Mobilidade
+  // DIA 5 – Natação
   {
-    dia: "DIA 4 – Corrida + Mobilidade",
-    tecnica: "Corrida intervalada leve + alongamento",
-    objetivo: "Trabalhar ritmo e recuperação ativa",
+    dia: "DIA 5 – Natação",
+    tecnica: "-",
+    objetivo: "Aula de natação com instrutor",
     tipo: "cardio",
     exercicios: [
-      { nome: "Caminhada aquecimento", series: "-", reps: "5 min", tecnica: "-", obs: "-" },
-      { nome: "Trote leve", series: "-", reps: "10 min", tecnica: "-", obs: "-" },
-      { nome: "3x 2min corrida moderada + 1min caminhada", series: "3", reps: "2min + 1min", tecnica: "Intervalado leve", obs: "-" },
-      { nome: "Trote final", series: "-", reps: "5 min", tecnica: "Desaceleração", obs: "-" },
-      { nome: "Mobilidade guiada", series: "-", reps: "10 min", tecnica: "-", obs: "Focar quadril, posterior e ombros" }
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   }
 ];
