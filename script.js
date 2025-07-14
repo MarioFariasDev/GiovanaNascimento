@@ -105,8 +105,7 @@ treinos.forEach((treino, i) => {
           <th>Reps</th>
           <th>Técnica</th>
           <th>Obs</th>
-          <th>Descanso</th>
-          <th>Vídeo</th>`;
+          <th>Descanso</th>`;
   }
 
   html += `</tr></thead><tbody>`;
@@ -127,20 +126,17 @@ treinos.forEach((treino, i) => {
       const reps = ex.reps || ex[2] || "-";
       const tecnica = ex.tecnica || ex[3] || "-";
       const obs = ex.obs || ex[4] || "-";
-      const videoFile = ex.video || "sem-video.mp4";
 
       html += `
-        <td>${nome}</td>
-        <td>${series}</td>
-        <td>${reps}</td>
-        <td>${tecnica}</td>
-        <td>${obs}</td>
-        <td>
-          <button class="timer-btn" onclick="iniciarTimer(this)">⏱️</button>
-          <span class="timer-display">00:00</span>
-        </td>
-        <td><button class="timer-btn" onclick="abrirVideo('${videoFile}')">🎥</button></td>`;
-    }
+  <td>${nome}</td>
+  <td>${series}</td>
+  <td>${reps}</td>
+  <td>${tecnica}</td>
+  <td>${obs}</td>
+  <td>
+    <button class="timer-btn" onclick="iniciarTimer(this)">⏱️</button>
+    <span class="timer-display">00:00</span>
+  </td>`;
 
     html += `</tr>`;
   });
