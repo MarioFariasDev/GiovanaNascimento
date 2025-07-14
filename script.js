@@ -76,7 +76,6 @@ const treinos = [
 ];
 
 // --- RENDERIZAÇÃO DOS TREINOS ---
-
 const treinoContainer = document.getElementById("treinoContainer");
 const progresso = JSON.parse(localStorage.getItem("progresso") || "{}");
 
@@ -90,25 +89,17 @@ treinos.forEach((treino, i) => {
     <p><strong>Objetivo:</strong> ${treino.objetivo}</p>
     <table class="exercise-table">
       <thead>
-        <tr>`;
-
-  if (treino.tipo === "dieta") {
-    html += `
-          <th>✔</th>
-          <th>Refeição</th>
-          <th>Descrição</th>`;
-  } else {
-    html += `
+        <tr>
           <th>✔</th>
           <th>Exercício</th>
           <th>Séries</th>
           <th>Reps</th>
           <th>Técnica</th>
           <th>Obs</th>
-          <th>Descanso</th>`;
-  }
-
-  html += `</tr></thead><tbody>`;
+          <th>Descanso</th>
+        </tr>
+      </thead>
+      <tbody>`;
 
   treino.exercicios.forEach((ex, j) => {
     const key = `d${i}_e${j}`;
@@ -117,28 +108,17 @@ treinos.forEach((treino, i) => {
 
     html += `<tr class="exercise-row ${doneClass}" data-key="${key}">`;
     html += `<td><input type="checkbox" ${checked}></td>`;
-
-    if (treino.tipo === "dieta") {
-      html += `<td>${ex[0]}</td><td>${ex[1]}</td>`;
-    } else {
-      const nome = ex.nome || ex[0];
-      const series = ex.series || ex[1] || "-";
-      const reps = ex.reps || ex[2] || "-";
-      const tecnica = ex.tecnica || ex[3] || "-";
-      const obs = ex.obs || ex[4] || "-";
-
-      html += `
-  <td>${nome}</td>
-  <td>${series}</td>
-  <td>${reps}</td>
-  <td>${tecnica}</td>
-  <td>${obs}</td>
-  <td>
-    <button class="timer-btn" onclick="iniciarTimer(this)">⏱️</button>
-    <span class="timer-display">00:00</span>
-  </td>`;
-
-    html += `</tr>`;
+    html += `<td>${ex.nome || "-"}</td>`;
+    html += `<td>${ex.series || "-"}</td>`;
+    html += `<td>${ex.reps || "-"}</td>`;
+    html += `<td>${ex.tecnica || "-"}</td>`;
+    html += `<td>${ex.obs || "-"}</td>`;
+    html += `
+      <td>
+        <button class="timer-btn" onclick="iniciarTimer(this)">⏱️</button>
+        <span class="timer-display">00:00</span>
+      </td>
+    </tr>`;
   });
 
   html += `</tbody></table>`;
