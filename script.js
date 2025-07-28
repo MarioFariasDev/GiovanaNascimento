@@ -1,82 +1,102 @@
 const treinos = [
-  // DIA 1 – Corrida Leve + Mobilidade
+  // DIA 1 – Segunda-feira: Inferiores + Natação
   {
-    dia: "DIA 1 – Corrida Leve + Mobilidade",
-    tecnica: "Ativação leve + alongamentos dinâmicos",
-    objetivo: "Manter ritmo leve, soltar quadril e preservar articulações",
-    tipo: "cardio",
-    exercicios: [
-      { nome: "Caminhada + trote leve", series: "-", reps: "5min + 10min", tecnica: "-", obs: "-" },
-      { nome: "Corrida leve contínua", series: "-", reps: "15min", tecnica: "-", obs: "Ritmo leve e confortável" },
-      { nome: "Alongamento dinâmico (mobilidade quadril, tornozelo)", series: "3", reps: "12 cada", tecnica: "-", obs: "Ex: afundo com torção, chute frontal, skipping leve" }
-    ]
-  },
-
-  // DIA 2 – Musculação Leve (Full Body) + Natação
-  {
-    dia: "DIA 2 – Full Body leve + Natação",
-    tecnica: "Controle de movimento e volume reduzido",
-    objetivo: "Manter estímulo muscular com mínimo estresse",
+    dia: "DIA 1 – Inferiores + Natação",
+    tecnica: "Volume moderado com ênfase em glúteos",
+    objetivo: "Manutenção de massa magra + recuperação ativa",
     tipo: "normal",
     exercicios: [
-      { nome: "Leg press leve", series: "2", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Remada baixa", series: "2", reps: "12", tecnica: "-", obs: "-" },
-      { nome: "Desenvolvimento com halteres", series: "2", reps: "12", tecnica: "-", obs: "-" },
-      { nome: "Cadeira abdutora", series: "2", reps: "15", tecnica: "-", obs: "-" },
-      { nome: "Abdominal prancha isométrica", series: "2", reps: "30s", tecnica: "-", obs: "-" },
-      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "Recuperação ativa" }
+      { nome: "Agachamento no smith + Cadeira extensora", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Stiff + Cadeira flexora", series: "3", reps: "12 cada", tecnica: "Bi-set", obs: "-" },
+      { nome: "Glúteo no cabo", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Prancha com deslocamento lateral", series: "3", reps: "30s", tecnica: "-", obs: "-" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 3 – Corrida Técnica (Tiros Curtos) + Core
+  // DIA 2 – Terça-feira: Corrida Leve + Natação
   {
-    dia: "DIA 3 – Corrida Técnica + Core",
-    tecnica: "Curto estímulo para relembrar ritmo de prova",
-    objetivo: "Agilidade + reforço mental",
+    dia: "DIA 2 – Corrida Leve + Natação",
+    tecnica: "Base aeróbica contínua",
+    objetivo: "Manter capacidade cardiorrespiratória com leveza",
     tipo: "cardio",
     exercicios: [
-      { nome: "Aquecimento: caminhada + mobilidade leve", series: "-", reps: "10min", tecnica: "-", obs: "-" },
-      { nome: "3x 200m ritmo de prova", series: "-", reps: "3x 200m", tecnica: "Intervalado", obs: "1min trote entre" },
-      { nome: "Prancha + abdominal infra", series: "2", reps: "30s + 15", tecnica: "-", obs: "-" }
+      { nome: "Caminhada + trote leve", series: "-", reps: "10min + 10min", tecnica: "-", obs: "-" },
+      { nome: "Corrida leve contínua", series: "-", reps: "20min", tecnica: "-", obs: "Respiração controlada" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 4 – OFF ou Natação Leve
+  // DIA 3 – Quarta-feira: Costas + Bíceps + Natação
   {
-    dia: "DIA 4 – Recuperação ativa ou descanso total",
-    tecnica: "-",
-    objetivo: "Soltar o corpo e garantir 100% para o domingo",
+    dia: "DIA 3 – Costas + Bíceps + Natação",
+    tecnica: "Estímulo completo em puxar",
+    objetivo: "Definição e fortalecimento postural",
+    tipo: "normal",
+    exercicios: [
+      { nome: "Remada curvada com barra ou halteres", series: "3", reps: "12", tecnica: "-", obs: "-" },
+      { nome: "Puxada frente + Remada baixa", series: "3", reps: "12", tecnica: "Bi-set", obs: "-" },
+      { nome: "Rosca direta com barra", series: "3", reps: "12", tecnica: "-", obs: "-" },
+      { nome: "Rosca martelo alternada", series: "3", reps: "10", tecnica: "-", obs: "-" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
+    ]
+  },
+
+  // DIA 4 – Quinta-feira: Corrida Técnica + Natação
+  {
+    dia: "DIA 4 – Corrida Intervalada + Natação",
+    tecnica: "Tiros curtos + técnica de respiração",
+    objetivo: "Melhora de ritmo e agilidade",
     tipo: "cardio",
     exercicios: [
-      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "Somente se estiver se sentindo disposta" },
-      { nome: "Ou descanso completo", series: "-", reps: "-", tecnica: "-", obs: "-" }
+      { nome: "Aquecimento: 5min caminhada + mobilidade", series: "-", reps: "-", tecnica: "-", obs: "-" },
+      { nome: "Corrida 4x 300m", series: "-", reps: "4x 300m", tecnica: "Intervalado", obs: "Ritmo firme com 1min de trote entre" },
+      { nome: "Desaquecimento: trote leve + mobilidade", series: "-", reps: "5min", tecnica: "-", obs: "-" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 5 – OFF (Obrigatório)
+  // DIA 5 – Sexta-feira: Full Body + Natação
   {
-    dia: "DIA 5 – Descanso Total",
+    dia: "DIA 5 – Full Body + Natação",
+    tecnica: "Volume leve com foco em resistência",
+    objetivo: "Estímulo geral sem fadiga",
+    tipo: "normal",
+    exercicios: [
+      { nome: "Leg press", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Remada baixa", series: "3", reps: "15", tecnica: "-", obs: "-" },
+      { nome: "Desenvolvimento com halteres", series: "3", reps: "12", tecnica: "-", obs: "-" },
+      { nome: "Cadeira abdutora", series: "3", reps: "20", tecnica: "-", obs: "-" },
+      { nome: "Prancha isométrica", series: "3", reps: "30s", tecnica: "Isometria", obs: "-" },
+      { nome: "Natação", series: "-", reps: "-", tecnica: "-", obs: "-" }
+    ]
+  },
+
+  // DIA 6 – Sábado: Descanso ou Alongamento
+  {
+    dia: "DIA 6 – Descanso / Mobilidade leve",
     tecnica: "-",
-    objetivo: "Chegar 100% para a prova",
+    objetivo: "Recuperação total ou mobilidade leve",
     tipo: "off",
     exercicios: [
-      { nome: "Descanso total", series: "-", reps: "-", tecnica: "-", obs: "Alimentação leve, hidratação alta, foco mental" }
+      { nome: "Descanso total ou alongamento leve", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   },
 
-  // DIA 6 – PROVA 5KM
+  // DIA 7 – Domingo: Corrida Longa Regenerativa
   {
-    dia: "DIA 6 – Corrida Oficial 5KM",
-    tecnica: "Prova",
-    objetivo: "Dar o melhor ritmo possível com confiança e leveza",
-    tipo: "corrida",
+    dia: "DIA 7 – Corrida Regenerativa",
+    tecnica: "Corrida contínua leve",
+    objetivo: "Manter base e gasto calórico leve",
+    tipo: "cardio",
     exercicios: [
-      { nome: "Aquecimento: 5min caminhada + 3min trote", series: "-", reps: "-", tecnica: "-", obs: "Respiração controlada" },
-      { nome: "Prova 5KM", series: "-", reps: "-", tecnica: "-", obs: "Dar o seu melhor! Estratégia: dividir em 3 blocos: 2km ritmo leve, 2km firme, 1km forte" },
-      { nome: "Desaquecimento: alongamento leve", series: "-", reps: "-", tecnica: "-", obs: "-" }
+      { nome: "Caminhada + trote leve", series: "-", reps: "5min + 5min", tecnica: "-", obs: "-" },
+      { nome: "Corrida contínua", series: "-", reps: "30min", tecnica: "-", obs: "Ritmo leve, conversacional" },
+      { nome: "Alongamento leve", series: "-", reps: "-", tecnica: "-", obs: "-" }
     ]
   }
 ];
+
 
 // --- RENDERIZAÇÃO DOS TREINOS ---
 const treinoContainer = document.getElementById("treinoContainer");
